@@ -6,9 +6,9 @@ let index = 0;
 function typing(){
     setInterval(() => {
         if(index >= range){
-            index = -1;
+            index = -5;
         }
-        if(index != -1){
+        if(index > -1){
             next = document.getElementsByTagName('ruby');
             range = next.length;
 
