@@ -17,11 +17,7 @@ function typing(){
             document.dispatchEvent(new KeyboardEvent("keyup", {keycode:code(next[index].innerHTML[0]),charcode:0,key: next[index].innerHTML[0].toLowerCase(), code: 'Key' + next[index].innerHTML[0]}));
         }
         
-        if(index >= range){
-            index = -1;
-        }else{
-            index++;
-        }
+        index++;
     }, 100);
 };
 
